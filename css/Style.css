@@ -1,13 +1,39 @@
+
+@import url('../css/fonts.css');
+
 html, body{
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
 }
 
+/* Variables */
+:root{
+
+    /* Font Variables */
+    --Abel: 'Abel',cursive;
+    --Anton: 'Anton', cursive;
+    --Josefine: 'Josefine', cursive;
+    --Lexend: 'Lexend', cursive;
+    --Livvic: 'Livvic', cursive;
+
+    /* Color Variables */
+    --text-gray: #3f4952;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #f3f3f3;
+    --midnight: #104f55;
+
+    /* Gradient Variables */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+}
+
 /* ----------- Global Classes --------- */
 
 a{
     text-decoration: none;
+    color: var(--text-gray);
 }
 
 .flex-row{
@@ -46,17 +72,62 @@ ul{
     padding: 1.6rem 1rem;
     font-size: 1.1rem;
     position: relative;
+    font-family: var(--Abel);
+    font-size: 1.1rem;
 }
 
 .nav .nav-brand a{
     font-size: 1.6rem;
     padding: 1rem 0;
     display: block;
+    font-family: var(--Lexend);
+    font-size: 1.6rem;
 }
+
+.nav .nav-items .nav-link:hover{
+    background-color: var(--midnight);
+}
+
+.nav .nav-items .nav-link:hover a{
+    color: var(--white);
+}
+
 
 .nav .social{
     padding: 1.4rem 0;
 }
 
-/* x--------Closing navBar-------- */
+.nav .social i{
+    padding: 0 .2rem;
+}
+
+.nav .social i:hover{
+    color: #a1a1a1;
+}
+
+
+/* -----X----Close navBar-----X--- */
+
+
+
+
+/*  Viewport less then or equal to 750px */
+
+@media only screen and (max-width: 750px){
+    .nav{
+        background: black;
+    }
+}
+
+
+/* XX Viewport less then or equal to 750px XX */
+
+
+
+
+
+
+
+
+
 
