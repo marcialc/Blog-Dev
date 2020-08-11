@@ -46,6 +46,29 @@ ul{
     list-style-type: none;
 }
 
+h1{
+    font-family: var(--Lexend);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var(--Lexend);
+}
+
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
 /* x---------- Closing Global Classes --------- */
 
 
@@ -107,7 +130,8 @@ ul{
     font-family: var(--Lexend);
     font-size: 1.6rem;
 }
-Amazing Place on Earths .nav-link:hover a{
+
+.nav.nav-link:hover a{
     color: var(--white);
 }
 
@@ -139,7 +163,23 @@ main .site-title{
 
 main .site-title .site-background{
     padding-top: 10rem;
+    text-align: center;
+    color: var(--white);
+}
 
+main .site-title h1,h3{
+    margin: .3rem;
+}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background: var(--sky);
+}
+
+main .site-title .btn:hover{
+    background: transparent;
+    border: 5px var(--white);
+    color: var(--white);
 }
 
 /* -----XX---------- Site Title ------XX------ */
